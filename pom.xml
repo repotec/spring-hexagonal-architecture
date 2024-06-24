@@ -19,6 +19,7 @@
 
 	<modules>
 		<module>hexagonal-sample-1</module>
+		<module>hexagonal-sample-2</module>
 	</modules>
 
 	<properties>

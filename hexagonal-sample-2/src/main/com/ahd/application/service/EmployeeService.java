@@ -24,8 +24,8 @@ public class EmployeeService implements EmployeeOperationUseCase {
     }
 
     @Override
-    public Employee findEmployeeById(Long employeeId) {
-        return employeeDrivenPort.findEmployeeById(employeeId);
+    public Optional<Employee> FindEmployeeById(Long employeeId) {
+        return employeeDrivenPort.FindEmployeeById(employeeId);
     }
 
     @Override
@@ -35,7 +35,7 @@ public class EmployeeService implements EmployeeOperationUseCase {
 
 
     @Override
-    public Employee updateEmployee(Employee employee) {
+    public Optional<Employee> updateEmployee(Employee employee) {
         return employeeDrivenPort.updateEmployee(employee);
     }
 

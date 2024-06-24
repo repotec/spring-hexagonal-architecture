@@ -9,7 +9,7 @@ public interface EmployeeDrivenPort {
 
     List<Employee> getAllEmployees();
 
-    Employee  findEmployeeById(Long employeeId);
+    Optional<Employee>  FindEmployeeById(Long employeeId);
 
     Employee saveEmployee(Employee employee);
 

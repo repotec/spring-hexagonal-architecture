@@ -1,15 +1,13 @@
-package com.ahd.application.ports.driven;
+package com.ahd.application.usecase;
 
 import com.ahd.domain.entities.Employee;
 
 import java.util.List;
-import java.util.Optional;
 
-public interface EmployeeDrivenPort {
-
+public interface EmployeeOperationUseCase {
     List<Employee> getAllEmployees();
 
-    Employee  findEmployeeById(Long employeeId);
+    Employee findEmployeeById(Long employeeId);
 
     Employee saveEmployee(Employee employee);
 
